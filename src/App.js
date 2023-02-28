@@ -3,6 +3,8 @@ import Pregunta from './components/Pregunta';
 import Formulario from './components/Formulario';
 import Listado from './components/Listado';
 import ControlPresupuesto from './components/ControlPresupuesto';
+import imagen1 from './assets/1.png';
+import imagen2 from './assets/2.png';
 
 function App() {
 
@@ -38,8 +40,12 @@ function App() {
   return (
     <div className="container">
         <header>
-            <h1>Gasto Semanal</h1>
-
+            <div className='headerH1'>
+              <img src={imagen1} alt="" />
+              <h1>Control de Presupuesto</h1>
+              <img src={imagen2} alt="" />
+            </div>
+             
             <div className="contenido-principal contenido">
               { mostrarpregunta ?  
                 ( 

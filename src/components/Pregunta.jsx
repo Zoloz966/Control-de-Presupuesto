@@ -48,7 +48,8 @@ const Pregunta = ({ guardarPresupuesto, guardarRestante, actualizarPregunta }) =
 
                 <input 
                     type="submit"
-                    className="button-primary u-full-width"
+                    id="primerInput"
+                    className="u-full-width"
                     value="Definir Presupuesto"
                 />
             </form>

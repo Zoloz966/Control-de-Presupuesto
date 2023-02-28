@@ -70,7 +70,8 @@ const Formulario = ({guardarGasto, guardarCrearGasto}) => {
 
             <input
                 type="submit"
-                className="button-primary u-full-width"
+                id='agregarGasto'
+                className="u-full-width"
                 value="Agregar Gasto"
             />
 
