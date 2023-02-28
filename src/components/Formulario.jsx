@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-import shortid from 'shortid';
+import { v4 as uuidv4 } from 'uuid';
 import Error from './Error';
 
 const Formulario = ({guardarGasto, guardarCrearGasto}) => {
@@ -25,7 +25,7 @@ const Formulario = ({guardarGasto, guardarCrearGasto}) => {
         const gasto = {
             nombre, 
             cantidad, 
-            id: shortid.generate()
+            id: uuidv4()
         }
 
         // pasar el gasto al componente principal
